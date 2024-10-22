@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Tailwind Test</title>
+</head>
+<body class="text-gray-600 font-thin"> 
+    <div>
+        <div ><!--Wrap content-->  
+            <nav class="bg-slate-100 shadow-md sm:top-0 sm:z-10 sm:fixed sm:w-full">
+                <div>
+                    <h1 class="font-bold uppercase p-5">
+                        <a href="/">Poka Codes</a>
+                    </h1>
+                    <div class="w-6 pl-8">
+                        <a href="">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                        </svg>
+                        </a>
+                    </div>
+                </div>
+                <ul class="sm:col-span-3 md:flex md:justify-end gap-6 mb-2 pb-4 mr-8">
+                    <li class="text-gray-800 font-bold">
+                        <a href="#">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="font-bold text-gray-800">About</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="font-bold text-gray-800">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div><!--End nav-->
+
+        <main class="px-16 py-6 bg-white col-span-2 mt-32">
+            <div class="flex justify-center  sm:justify-end ">
+                <a href="#" class="text-red-600 bg-red-300 rounded-3xl p-2 font-bold shadow-md">Log in</a>
+                <a href="#" class="text-red-600 ml-6 font-bold bg-red-300 rounded-3xl p-2 shadow-md">Sign Up</a>
+            </div>
+
+            <header class="inline-flex gap-3 justify-center">
+                <h2 class="text-gray-800 text-4xl font-semibold">
+                    Recipes
+                </h2>
+                <h3 class="text-2xl font-semibold mt-2">
+                    By Tailwind
+                </h3>
+            </header>
+
+            <div class="">
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Latest Recipes</h4>
+                <div class="mt-8 w-auto grid md:grid-cols-2 gap-10">
+                    <!--Cards go here-->
+                    <div class="bg-slate-100 rounded-md overflow-hidden shadow-lg relative hover:shadow-black">
+                        <img src="./img/image4.png" alt="" class="w-full sm:h4 h-50">
+                        <div class="rounded-md mt-5">
+                            <span class="font-bold">5 Bean Chill Stew</span>
+                            <span class="block text-gray-500 font-mono">Recipe by Mario</span>
+                        </div>
+                        <div class="rounded-lg bg-slate-200 w-16 ml-2 mt-2 absolute top-0 flex p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                              
+                            <span class="text-sm flex font-bold justify-center font-mono">
+                                25min
+                            </span>
+                        </div>
+                    </div>
+                    <!--Cards go here-->
+                    <div class="bg-slate-100 rounded-md overflow-hidden shadow-lg relative hover:shadow-black">
+                        <img src="./img/image2.jpg" alt="" class="w-full sm:h4 h-50">
+                        <div class="rounded-md mt-5">
+                            <span class="font-bold">5 Bean Chill Stew</span>
+                            <span class="block text-gray-500 font-mono">Recipe by Mario</span>
+                        </div>
+                        <div class="rounded-lg bg-slate-200 w-16 ml-2 mt-2 absolute top-0 flex p-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                            </svg>
+                            <span class="text-sm flex font-bold justify-center font-mono">
+                                25min
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">Most Poupular Recipes</h4>
+                <div class="mt-8">
+                    <!--Cards go here -->
+                </div>
+                <div class="flex justify-center ">
+                    <button class="bg-slate-300 shadow-lg w-11 justify-center p-2 m-5 rounded-md hover:shadow-inner">Load</button>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
